@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:cardCornerRadius="@dimen/_7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_txt_hint_enter_phonenumber"
+            android:inputType="phone"
+            android:layout_margin="@dimen/_15dp"/>
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_txt_hint_enter_message"
+            android:inputType="text"
+            android:layout_margin="@dimen/_15dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_txt_send"
+            app:cornerRadius="@dimen/_5dp"
+            android:layout_margin="@dimen/_15dp"
+            android:backgroundTint="@color/green"/>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
