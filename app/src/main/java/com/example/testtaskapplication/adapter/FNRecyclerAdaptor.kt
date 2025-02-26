@@ -1,4 +1,4 @@
-package com.pikpart.businessmanager.adapter
+package com.example.testtaskapplication.Utils
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
-import com.pikpart.businessmanager.util.FNObjectUtil
 
 
 class FNRecyclerAdaptor<T>() : RecyclerView.Adapter<FNRecyclerAdaptor.ViewHolder>(),

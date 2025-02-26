@@ -17,6 +17,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.testtaskapplication.R
+import com.example.testtaskapplication.Utils.FNRecyclerAdaptor
 import com.example.testtaskapplication.Utils.SMSPermissionUtil
 import com.example.testtaskapplication.constant.TaskConstant
 import com.example.testtaskapplication.databinding.ActivityMainBinding
@@ -24,7 +25,6 @@ import com.example.testtaskapplication.model.SMSModel
 import com.example.testtaskapplication.repository.SMSRepository
 import com.example.testtaskapplication.view.components.MessageDialog
 import com.example.testtaskapplication.viewmodel.SMSViewModel
-import com.pikpart.businessmanager.adapter.FNRecyclerAdaptor
 
 
 class MainActivity : AppCompatActivity(), MessageDialog.MessageDialogListener {
@@ -42,6 +42,9 @@ class MainActivity : AppCompatActivity(), MessageDialog.MessageDialogListener {
         setContentView(binding.root)
         binding.search.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
+                if (s.toString() == ""){
+                    getSmsList()
+                }
             }
 
             override fun beforeTextChanged(
@@ -62,7 +65,7 @@ class MainActivity : AppCompatActivity(), MessageDialog.MessageDialogListener {
                     smsAdapter.filter.filter(s.toString())
                 }
             }
-            
+
         })
 
 

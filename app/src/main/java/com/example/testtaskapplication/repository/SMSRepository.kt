@@ -3,8 +3,8 @@ package com.example.testtaskapplication.repository
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.smsreader.utils.SMSsUtil
 import com.example.testtaskapplication.model.SMSModel
+import com.example.testtaskapplication.utils.SMSsUtil
 
 class SMSRepository (private val context: Context){
 

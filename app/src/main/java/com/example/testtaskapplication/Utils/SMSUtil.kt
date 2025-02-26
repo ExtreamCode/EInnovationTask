@@ -1,11 +1,9 @@
-package com.example.smsreader.utils
+package com.example.testtaskapplication.utils
 
 import android.content.ContentResolver
 import android.content.Context
 import android.database.Cursor
 import android.net.Uri
-import android.telephony.SmsManager
-import android.widget.Toast
 import com.example.testtaskapplication.model.SMSModel
 
 
