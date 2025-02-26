@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity(), MessageDialog.MessageDialogListener {
                     smsAdapter.filter.filter(s.toString())
                 }
             }
+            
         })
 
 
