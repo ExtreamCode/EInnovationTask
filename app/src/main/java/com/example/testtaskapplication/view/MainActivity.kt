@@ -15,9 +15,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
 import com.example.testtaskapplication.R
 import com.example.testtaskapplication.Utils.SMSPermissionUtil
 import com.example.testtaskapplication.constant.TaskConstant
@@ -26,8 +24,6 @@ import com.example.testtaskapplication.model.SMSModel
 import com.example.testtaskapplication.repository.SMSRepository
 import com.example.testtaskapplication.view.components.MessageDialog
 import com.example.testtaskapplication.viewmodel.SMSViewModel
-import com.google.android.material.button.MaterialButton
-import com.google.android.material.textfield.TextInputEditText
 import com.pikpart.businessmanager.adapter.FNRecyclerAdaptor
 
 
